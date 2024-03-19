@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission Form</title>
+    <link rel="stylesheet" href="admissionstyle.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Admission Form</h1>
+        <form action="#" method="post">
+            <section>
+                <h2>Personal Details</h2>
+                <div class="form-group">
+                    <label for="firstName">First Name:</label>
+                    <input type="text" id="firstName" name="firstName" required>
+                </div>
+                <div class="form-group">
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" id="lastName" name="lastName" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+            </section>
+
+            <section>
+                <h2>Academic Details</h2>
+                <div class="form-group">
+                    <label for="previousSchool">Previous School/College:</label>
+                    <input type="text" id="previousSchool" name="previousSchool" required>
+                </div>
+                <div class="form-group">
+                    <label for="previousMarks">Previous Exam Marks:</label>
+                    <input type="text" id="previousMarks" name="previousMarks" required>
+                </div>
+                <div class="form-group">
+                    <label for="preferredStream">Preferred Stream:</label>
+                    <select id="preferredStream" name="preferredStream" required>
+                        <option value="">Select Stream</option>
+                        <option value="Arts">Arts</option>
+                        <option value="Commerce">Commerce</option>
+                        <option value="Science">Science</option>
+                    </select>
+                </div>
+            </section>
+
+            <section>
+                <h2>Bank Details</h2>
+                <div class="form-group">
+                    <label for="accountNumber">Account Number:</label>
+                    <input type="text" id="accountNumber" name="accountNumber" required>
+                </div>
+                <div class="form-group">
+                    <label for="bankName">Bank Name:</label>
+                    <input type="text" id="bankName" name="bankName" required>
+                </div>
+                <div class="form-group">
+                    <label for="branch">Branch:</label>
+                    <input type="text" id="branch" name="branch" required>
+                </div>
+            </section>
+
+            <section>
+                <h2>Subject Preferences</h2>
+                <div class="form-group">
+                    <label for="subject1">Subject 1:</label>
+                    <input type="text" id="subject1" name="subject1" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject2">Subject 2:</label>
+                    <input type="text" id="subject2" name="subject2" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject3">Subject 3:</label>
+                    <input type="text" id="subject3" name="subject3" required>
+                </div>
+            </section>
+
+            <button id="admissionsubmitted" onclick="window.location.href='output_form.html';">Submit Form</button>
+        </form>
+    </div>
+</body>
+
+</html>
