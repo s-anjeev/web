@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission Form</title>
+    <link rel="stylesheet" href="/programs/web/style/admissionstyle.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Admission Form</h1>
+        <form action="/programs/web/server/admission_form.php" method="post">
+            <section>
+                <h2>Personal Information</h2>
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="fatherName">Father's Name:</label>
+                    <input type="text" id="fatherName" name="fatherName" required>
+                </div>
+                <div class="form-group">
+                    <label for="motherName">Mother's Name:</label>
+                    <input type="text" id="motherName" name="motherName" required>
+                </div>
+                <div class="form-group">
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob" required>
+                </div>
+                <div class="form-group">
+                    <label for="adharNo">Adhar No:</label>
+                    <input type="text" id="adharNo" name="adharNo" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="mobile">Mobile:</label>
+                    <input type="tel" id="mobile" name="mobile" required>
+                </div>
+                <div class="form-group">
+                    <label for="gender">Gender:</label>
+                    <select id="gender" name="gender" required>
+                        <option value="">Select Gender</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="religion">Religion:</label>
+                    <input type="text" id="religion" name="religion" required>
+                </div>
+            </section>
+
+            <section>
+                <h2>Address</h2>
+                <div class="form-group">
+                    <label for="village">Village:</label>
+                    <input type="text" id="village" name="village" required>
+                </div>
+                <div class="form-group">
+                    <label for="postOffice">Post Office:</label>
+                    <input type="text" id="postOffice" name="postOffice" required>
+                </div>
+                <div class="form-group">
+                    <label for="tehsil">Tehsil:</label>
+                    <input type="text" id="tehsil" name="tehsil" required>
+                </div>
+                <div class="form-group">
+                    <label for="district">District:</label>
+                    <input type="text" id="district" name="district" required>
+                </div>
+                <div class="form-group">
+                    <label for="state">State:</label>
+                    <input type="text" id="state" name="state" required>
+                </div>
+                <div class="form-group">
+                    <label for="pincode">Pin Code:</label>
+                    <input type="text" id="pincode" name="pincode" required>
+                </div>
+            </section>
+
+            <section>
+                <h2>Subject Details</h2>
+                <div class="form-group">
+                    <label for="stream">Stream:</label>
+                    <input type="text" id="stream" name="stream" required>
+                </div>
+                <table>
+                    <tr>
+                        <th>Subject Code</th>
+                        <th>Subject Title</th>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="subject1_code" required></td>
+                        <td><input type="text" name="subject1_title" required></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="subject2_code" required></td>
+                        <td><input type="text" name="subject2_title" required></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="subject3_code" required></td>
+                        <td><input type="text" name="subject3_title" required></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="subject4_code" required></td>
+                        <td><input type="text" name="subject4_title" required></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="subject5_code" required></td>
+                        <td><input type="text" name="subject5_title" required></td>
+                    </tr>
+                </table>
+            </section>
+
+            <section>
+                <h2>Academic Details</h2>
+                <table>
+                    <tr>
+                        <th>Board</th>
+                        <th>Marks Obtained</th>
+                        <th>Total Marks</th>
+                        <th>Roll Number</th>
+                        <th>Class</th>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="10th_board" required></td>
+                        <td><input type="text" name="10th_marks" required></td>
+                        <td><input type="text" name="10th_total_marks" required></td>
+                        <td><input type="text" name="10th_roll_number" required></td>
+                        <td><input type="text" name="10th_class" required></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="12th_board" required></td>
+                        <td><input type="text" name="12th_marks" required></td>
+                        <td><input type="text" name="12th_total_marks" required></td>
+                        <td><input type="text" name="12th_roll_number" required></td>
+                        <td><input type="text" name="12th_class" required></td>
+                    </tr>
+                </table>
+            </section>
+
+            <button id="admissionsubmitted">Submit Form</button>
+        </form>
+    </div>
+</body>
+
+</html>
